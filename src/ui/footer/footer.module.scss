@@ -4,4 +4,48 @@
 .footer{
     background-color: $black;
     padding: 15.8125rem 0 4rem;
+
+    &__top{
+        width: 87.2%;
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid #FFFFFF1E;
+        padding-bottom: 2rem;
+        position: relative;
+    }
+
+    &__links{
+        padding: 1rem 0;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+    }
+
+    &__link{
+        font-size: 0.875rem;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: $white;
+        padding: 1rem 0;
+    }
+
+    &__bottom{
+        @include body-2;
+        color: #FFFFFF80;
+        margin-top: 11.125rem;
+        text-align: center;
+        font-style: normal;
+    }
+
+    &__contact{
+        margin-top: 2.5rem;
+    }
+
+    &__socials{
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+    }
 }
