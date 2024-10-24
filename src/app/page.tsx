@@ -1,7 +1,5 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
-import Image from "next/image";
-import hero from "../../public/home/desktop/image-hero-phone.png";
 
 export default function Home() {
   return (
@@ -13,6 +11,26 @@ export default function Home() {
             <div className={`${styles["home__cover-container"]}`}>
             </div>
         </section>
+        <ul className={`${styles["designs"]}`}>
+            <li className={`${styles["designs__item"]}`}>
+                <Link href={`/#`} className={`${styles["designs__link"]} ${styles["designs__link--web"]}`}>
+                    <h2 className={`${styles["designs__title"]}`}>WEB DESIGN</h2>
+                    <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
+                </Link>
+            </li>
+            <li className={`${styles["designs__item"]}`}>
+                <Link href={`/#`} className={`${styles["designs__link"]} ${styles["designs__link--app"]}`}>
+                    <h2 className={`${styles["designs__title"]}`}>APP DESIGN</h2>
+                    <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
+                </Link>
+            </li>
+            <li className={`${styles["designs__item"]}`}>
+                <Link href={`/#`} className={`${styles["designs__link"]} ${styles["designs__link--graphic"]}`}>
+                    <h2 className={`${styles["designs__title"]}`}>GRAPHIC DESIGN</h2>
+                    <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
+                </Link>
+            </li>
+        </ul>
     </main>
   );
 }

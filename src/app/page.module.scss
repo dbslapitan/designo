@@ -42,3 +42,59 @@
         background-repeat: no-repeat;
     }
 }
+
+.designs{
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    &__item{
+        width: 87.2%;
+        margin: auto;
+    }
+
+    &__link{
+        padding: 5.625rem 3.5rem;
+        text-align: center;
+        color: $white;
+        border-radius: 0.9375rem;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &--web{
+            background-image: linear-gradient(0deg, #00000099, #00000099), url("../../public/home/mobile/image-web-design.jpg");
+        }
+
+        &--app{
+            background-image: linear-gradient(0deg, #00000099, #00000099), url("../../public/home/mobile/image-app-design.jpg");
+        }
+
+        &--graphic{
+            background-image: linear-gradient(0deg, #00000099, #00000099), url("../../public/home/mobile/image-graphic-design.jpg");
+        }
+    }
+
+    &__titles{
+        font-size: 1.75rem;
+        font-weight: 500;
+        letter-spacing: 1.4px;
+        line-height: 1.28571;
+    }
+
+    &__sub{
+        font-size: 0.9375rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+        display: flex;
+        column-gap: 1rem;
+        justify-content: center;
+
+        &::after{
+            display: block;
+            content: url("../../public/shared/desktop/icon-right-arrow.svg");
+        }
+    }
+}
