@@ -1,0 +1,47 @@
+@use "../styles/mixins" as *;
+@use "../styles/variables" as *;
+
+.home{
+
+    &__hero{
+        background-color: #E7816B;
+        padding-top: 5rem;
+    }
+
+    &__heading{
+        @include heading-2;
+        color: $white;
+        text-align: center;
+        max-width: 20.4375rem;
+        margin: auto;
+    }
+
+    &__paragraph{
+        @include body-1;
+        color: $white;
+        max-width: 20.4375rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 0.875rem;
+    }
+
+    &__learn{
+        display: block;
+        width: fit-content;
+        margin: 1.5rem auto 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__cover-container{
+        width: 100%;
+        height: 28.1875rem;
+    }
+
+    &__cover{
+        width: inherit;
+        object-fit: cover;
+        position: relative;
+        top: -5.625rem;
+    }
+}

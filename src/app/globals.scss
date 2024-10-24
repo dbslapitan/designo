@@ -1,3 +1,6 @@
+@use "../styles/mixins" as *;
+@use "../styles/variables" as *;
+
 html{
     box-sizing: border-box;
 }
@@ -15,8 +18,27 @@ button{
 
 a{
     text-decoration: none;
+    color: unset;
 }
 
 ul{
     list-style: none;
+}
+
+.btn{
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 1.125rem 1.5rem 1rem;
+
+    &__dark{
+        background-color: $white;
+        color: #333136;
+
+        &:hover{
+            background-color: $light-peach;
+            color: $white;
+        }
+    }
 }
