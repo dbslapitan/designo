@@ -35,13 +35,10 @@
 
     &__cover-container{
         width: 100%;
-        height: 28.1875rem;
-    }
-
-    &__cover{
-        width: inherit;
-        object-fit: cover;
-        position: relative;
-        top: -5.625rem;
+        height: 33.8125rem;
+        background-image: url("../../public/home/desktop/image-hero-phone.png");
+        background-position-x: center;
+        margin-top: -5.625rem;
+        background-repeat: no-repeat;
     }
 }

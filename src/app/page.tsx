@@ -11,7 +11,6 @@ export default function Home() {
             <p className={`${styles["home__paragraph"]}`}>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
             <Link href={`#`} className={`btn btn__dark ${styles["home__learn"]}`}>LEARN MORE</Link>
             <div className={`${styles["home__cover-container"]}`}>
-                <Image src={hero} alt="phone with a fixture on it" className={`${styles["home__cover"]}`} priority={true} height={0} width={0}></Image>
             </div>
         </section>
     </main>
