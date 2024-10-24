@@ -8,6 +8,10 @@
     &__hero{
         background-color: #E7816B;
         padding-top: 5rem;
+        background-image: url("../../public/shared/desktop/bg-pattern-small-circle.svg");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 640px 640px;
     }
 
     &__heading{

@@ -13,6 +13,10 @@
     bottom: -11.875rem;
     left: 50%;
     transform: translateX(-50%);
+    background-image: url("../../../public/shared/desktop/bg-pattern-call-to-action.svg");
+    background-size: 250%;
+    background-position: right center;
+    background-repeat: no-repeat;
 
     &__header{
         @include heading-2;
