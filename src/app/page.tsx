@@ -1,5 +1,9 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
+import passionate from "../../public/home/desktop/illustration-passionate.svg";
+import resourceful from "../../public/home/desktop/illustration-resourceful.svg";
+import friendly from "../../public/home/desktop/illustration-friendly.svg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -29,6 +33,29 @@ export default function Home() {
                     <h2 className={`${styles["designs__title"]}`}>GRAPHIC DESIGN</h2>
                     <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
                 </Link>
+            </li>
+        </ul>
+        <ul className={`${styles["characters"]}`}>
+            <li className={`${styles["characters__item"]}`}>
+                <div className={`${styles["characters__background"]}`}>
+                    <Image src={passionate} alt="an illustration depicting a passionate characteristic"></Image>
+                </div>
+                <h3 className={`${styles["characters__title"]}`}>PASSIONATE</h3>
+                <p className={`${styles["characters__description"]}`}>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
+            </li>
+            <li className={`${styles["characters__item"]}`}>
+                <div className={`${styles["characters__background"]} ${styles["characters__background--270"]}`}>
+                    <Image src={resourceful} alt="an illustration depicting a passionate characteristic"></Image>
+                </div>
+                <h3 className={`${styles["characters__title"]}`}>RESOURCEFUL</h3>
+                <p className={`${styles["characters__description"]}`}>Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients&apos; needs.</p>
+            </li>
+            <li className={`${styles["characters__item"]}`}>
+                <div className={`${styles["characters__background"]} ${styles["characters__background--90"]}`}>
+                    <Image src={friendly} alt="an illustration depicting a passionate characteristic"></Image>
+                </div>
+                <h3 className={`${styles["characters__title"]}`}>FRIENDLY</h3>
+                <p className={`${styles["characters__description"]}`}> We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
             </li>
         </ul>
     </main>
