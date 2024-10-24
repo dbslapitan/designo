@@ -9,9 +9,34 @@
         width: 100vw;
         left: 0;
         top: 100%;
+        text-align: left;
 
         &--show{
             display: block;
+            height: calc(100vh - 6rem);
+            background-color: #000000B3;
+            z-index: 3;
+        }
+    }
+
+    &__link{
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.04167;
+        letter-spacing: 2px;
+        padding: 1rem 1.5rem;
+    }
+
+    &__item{
+        background-color: $black;
+
+        &:first-of-type{
+            padding-top: 2rem;
+        }
+
+        &:last-of-type{
+            padding-bottom: 2rem;
         }
     }
 }
