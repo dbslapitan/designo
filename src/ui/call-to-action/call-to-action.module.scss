@@ -28,7 +28,8 @@
 
     @include desktop{
         width: 69.4375rem;
-        height: 18.25rem;
+        padding: 4.5rem 5.9375rem;
+        text-align: left;
     }
 
     &__header{
@@ -38,6 +39,10 @@
             @include heading-3;
             max-width: 20.9375rem;
             margin: auto;
+        }
+
+        @include desktop{
+            margin: 0;
         }
     }
 
@@ -52,11 +57,22 @@
             margin: 0.875rem auto 0;
             max-width: 28rem;
         }
+
+        @include desktop{
+            margin: 0;
+        }
     }
 
     &__call{
         display: block;
         width: fit-content;
         margin: 2rem auto 0;
+
+        @include desktop{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-100%);
+            right: 6rem;
+        }
     }
 }
