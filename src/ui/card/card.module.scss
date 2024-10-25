@@ -2,21 +2,34 @@
 @use "../../styles/variables" as *;
 
 .card{
-    width: 100%;
+    width: 20.4375rem;
     margin: 2.5rem auto 0;
-    max-width: 21.875rem;
 
     &:first-of-type{
         margin-top: 0;
     }
 
+    @include tablet{
+        width: 43.0625rem;
+        display: flex;
+    }
+
     &__first{
         height: 20rem;
+
+        @include tablet{
+            width: 21.1875rem;
+            height: 19.375rem;
+        }
     }
 
     &__cover{
         width: 100%;
         border-radius: 0.9375rem 0.9375rem 0 0;
+
+        @include tablet{
+            border-radius: 0.9375rem 0 0 0.9375rem;
+        }
     }
 
     &__last{
@@ -24,6 +37,14 @@
         background-color: #FDF3F0;
         border-radius: 0 0 0.9375rem 0.9375rem;
         text-align: center;
+
+        @include tablet{
+            flex-grow: 1;
+            border-radius: 0 0.9375rem 0.9375rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__title{
