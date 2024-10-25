@@ -17,11 +17,18 @@
     background-size: 876px 584px;
     background-position: 40% 50%;
     background-repeat: no-repeat;
+    max-width: 69.4375rem;
 
     @include tablet{
         width: 90%;
         bottom: -5.375rem;
         padding: 3.5625rem 0;
+        background-position: clamp(0rem, -18.071rem + 37.649vi, 15.813rem) center;
+    }
+
+    @include desktop{
+        width: 69.4375rem;
+        height: 18.25rem;
     }
 
     &__header{

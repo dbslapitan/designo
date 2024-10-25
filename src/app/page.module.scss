@@ -9,6 +9,10 @@
         padding-bottom: 20.6875rem;
     }
 
+    @include desktop{
+        padding-bottom: 23.75rem;
+    }
+
     &__hero{
         background-color: #E7816B;
         padding-top: 5rem;
@@ -242,6 +246,10 @@
     flex-direction: column;
     row-gap: 5rem;
     max-width: 69.4375rem;
+
+    @include tablet{
+        width: 87.2%;
+    }
 
     @include desktop{
         margin-top: 10rem;
