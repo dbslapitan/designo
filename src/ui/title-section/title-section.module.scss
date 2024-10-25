@@ -1,0 +1,22 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.section{
+    padding: 6.5rem 1.5rem;
+    background-color: $peach;
+    color: $white;
+    text-align: center;
+    background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: repeat-x;
+    background-size: 18.25rem 18.25rem;
+    background-position: top right;
+
+    &__title{
+        @include heading-2;
+    }
+
+    &__description{
+        @include body-1;
+        margin-top: 1.5rem;
+    }
+}
