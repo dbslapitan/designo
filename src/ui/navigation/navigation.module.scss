@@ -27,6 +27,7 @@
             @include tablet{
                 display: flex;
                 height: fit-content;
+                background-color: inherit;
             }
         }
     }
