@@ -33,7 +33,7 @@ export default function Navigation(){
             <button className={`${style["nav__toggle"]}`} onClick={toggle}>
                 <Image src={isOpen ? close : hamburger} alt={isOpen ? "close button" : "hamburger button"}/>
             </button>
-            <ul className={`${style["nav__links"]} ${isOpen ? style["nav__links--show"] : ""}`} id="overlay">
+            <ul className={`${style["nav__links"]} ${isOpen ? style["nav__links--show"] : ""}`}>
                 <li className={`${style["nav__item"]}`}>
                     <Link href={"/"} className={`${style["nav__link"]}`}>OUR COMPANY</Link>
                 </li>

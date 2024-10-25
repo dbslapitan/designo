@@ -6,4 +6,11 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @include tablet{
+        position: static;
+        width: 90%;
+        margin: auto;
+        padding: 4rem 0;
+    }
 }

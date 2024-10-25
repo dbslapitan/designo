@@ -11,11 +11,23 @@
         top: 100%;
         text-align: left;
 
+        @include tablet{
+            display: flex;
+            position: static;
+            width: fit-content;
+            column-gap: 2.625rem;
+        }
+
         &--show{
             display: block;
             height: calc(100vh - 6rem);
             background-color: #000000B3;
             z-index: 3;
+
+            @include tablet{
+                display: flex;
+                height: fit-content;
+            }
         }
     }
 
@@ -26,17 +38,45 @@
         line-height: 1.04167;
         letter-spacing: 2px;
         padding: 1rem 1.5rem;
+
+        @include tablet{
+            color: $black;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: 2px;
+            padding: 0;
+        }
     }
 
     &__item{
         background-color: $black;
 
+        @include tablet{
+            background-color: inherit;
+        }
+
         &:first-of-type{
             padding-top: 2rem;
+
+            @include tablet{
+                padding: 0;
+            }
         }
 
         &:last-of-type{
             padding-bottom: 2rem;
+            
+            @include tablet{
+                padding: 0;
+            }
+        }
+    }
+
+    &__toggle{
+
+        @include tablet{
+            display: none;
         }
     }
 }
