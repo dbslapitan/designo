@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    max-width: 69.4375rem;
 
     @include tablet{
         position: static;
@@ -15,7 +16,7 @@
     }
 
     @include desktop{
-        width: 77%;
+        width: 69.4375rem;
         padding: 4rem 0 4.1875rem;
     }
 }

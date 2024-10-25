@@ -17,6 +17,17 @@
             margin: auto;
             width: 90%;
             border-radius: 0.9375rem;
+            background-position: clamp(10.625rem, -10.875rem + 44.792vi, 29.438rem);
+            max-width: 69.4375rem;
+        }
+
+        @include desktop{
+            width: 69.4375rem;
+            padding: 0 0 0 5.9375rem;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
     }
 
@@ -31,6 +42,12 @@
             @include heading-4;
             max-width: 35.8125rem;
         }
+
+        @include desktop{
+            margin: 9.0625rem 0 0 0;
+            text-align: left;
+            max-width: 33.75rem;
+        }
     }
 
     &__paragraph{
@@ -42,7 +59,14 @@
         margin-top: 0.875rem;
 
         @include tablet{
+            @include body-2;
             margin-top: 2rem;
+        }
+
+        @include desktop{
+            text-align: left;
+            margin: 2rem 0 0 0;
+            max-width: 27.8125rem;
         }
     }
 
@@ -55,6 +79,10 @@
 
         @include tablet{
             margin-top: 1.25rem;
+        }
+
+        @include desktop{
+            margin: 2.5rem 0 0 0;
         }
     }
 
@@ -69,6 +97,12 @@
         @include tablet{
             height: 34.875rem;
             margin-top: -6.3125rem;
+        }
+
+        @include desktop{
+            width: 46.8504%;
+            height: 100%;
+            margin-top: 0;
         }
     }
 }
