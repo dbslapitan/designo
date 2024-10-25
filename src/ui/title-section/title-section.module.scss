@@ -23,11 +23,17 @@
 
         @include tablet{
             background-image: url("../../../public/shared/desktop/bg-pattern-call-to-action.svg");
-            background-position: left 0 center;
-            background-size: 876px 584px;
-            transform: rotateZ(180deg);
-            background-repeat: repeat;
-            background-position: top 50% right 292px;
+            background-position: right -15.25rem center;
+            background-size: 150%;
+            background-repeat: no-repeat;
+            transform: scaleY(-1);
+            z-index: 0;
+        }
+
+        @include desktop{
+            background-image: url("../../../public/shared/desktop/bg-pattern-call-to-action.svg");
+            background-size: unset;
+            background-position: right center;
             z-index: 0;
         }
     }
