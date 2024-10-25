@@ -6,25 +6,43 @@
     background-color: $peach;
     color: $white;
     text-align: center;
-    background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
-    background-repeat: repeat-x;
-    background-size: 18.25rem 18.25rem;
-    background-position: top right;
     position: relative;
+    max-width: 69.4375rem;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+        background-repeat: no-repeat;
+        background-size: 18.25rem 18.25rem;
+        background-position: top right;
+
+        @include tablet{
+            background-image: url("../../../public/shared/desktop/bg-pattern-call-to-action.svg");
+            background-position: left 0 center;
+            background-size: 876px 584px;
+            transform: rotateZ(180deg);
+            background-repeat: repeat;
+            background-position: top 50% right 292px;
+            z-index: 0;
+        }
+    }
 
     @include tablet{
         padding: 4rem 0;
         width: 90%;
         margin: auto;
         border-radius: 0.9375rem;
-        background-image: url("../../../public/shared/desktop/bg-pattern-call-to-action.svg");
-        background-position: left 0 center;
-        background-size: 876px 584px;
-        background-repeat: no-repeat;
     }
 
     &__title{
         @include heading-2;
+        position: relative;
+        z-index: 1;
 
         @include tablet{
             @include heading-4;
@@ -35,6 +53,8 @@
         @include body-1;
         margin: 1.5rem auto 0;
         max-width: 400px;
+        position: relative;
+        z-index: 1;
 
         @include tablet{
             @include body-2;
