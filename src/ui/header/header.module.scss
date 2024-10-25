@@ -13,4 +13,9 @@
         margin: auto;
         padding: 4rem 0;
     }
+
+    @include desktop{
+        width: 77%;
+        padding: 4rem 0 4.1875rem;
+    }
 }
