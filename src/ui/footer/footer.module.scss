@@ -5,6 +5,10 @@
     background-color: $black;
     padding: 15.8125rem 0 4rem;
 
+    @include tablet{
+        padding: 10.375rem 0 5rem;
+    }
+
     &__top{
         width: 87.2%;
         margin: auto;
