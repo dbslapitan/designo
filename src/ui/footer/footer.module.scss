@@ -9,6 +9,10 @@
         padding: 10.375rem 0 5rem;
     }
 
+    @include desktop{
+        padding: 9rem 0 4.5rem;
+    }
+
     &__top{
         width: 87.2%;
         margin: auto;
@@ -16,13 +20,14 @@
         border-bottom: 1px solid #FFFFFF1E;
         padding-bottom: 2rem;
         position: relative;
+        max-width: 69.4375rem;
 
         @include tablet{
             width: 90%;
             position: static;
             display: flex;
             justify-content: space-between;
-            padding: bo 2.5rem;
+            padding: 0;
         }
     }
 
@@ -66,6 +71,7 @@
             display: flex;
             width: 90%;
             justify-content: space-between;
+            max-width: 69.4375rem;
         }
     }
 
