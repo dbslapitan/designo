@@ -23,8 +23,14 @@ export default function Navigation(){
                 setIsOpen(false);
             }
         };
+        const escListener = (e: KeyboardEvent) => {
+            if(e.key === "Escape" && isOpen){
+                setIsOpen(false);
+            }
+        };
 
         document.addEventListener("click", windowClickHandler);
+        document.addEventListener("keyup", escListener);
 
         if(isOpen){
             (body as HTMLElement).style.maxHeight = "100vh";
@@ -37,6 +43,7 @@ export default function Navigation(){
 
         return () => {
             document.removeEventListener("click", windowClickHandler);
+            document.removeEventListener("keyup", escListener);
         }
     });
 
