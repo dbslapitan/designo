@@ -19,8 +19,9 @@ export default function Navigation(){
         const body = document.querySelector("body");
 
         if(isOpen){
+            console.log("isopen");
             (body as HTMLElement).style.maxHeight = "100vh";
-            (body as HTMLElement).style.overflowY = "clip";
+            (body as HTMLElement).style.overflowY = "hidden";
         }
         else{
             (body as HTMLElement).style.maxHeight = "none";
