@@ -12,6 +12,12 @@
         background-position: left;
         background-repeat: no-repeat;
         background-size: 640px 640px;
+
+        @include tablet{
+            margin: auto;
+            width: 90%;
+            border-radius: 0.9375rem;
+        }
     }
 
     &__heading{
@@ -20,6 +26,11 @@
         text-align: center;
         max-width: 20.4375rem;
         margin: auto;
+
+        @include tablet{
+            @include heading-4;
+            max-width: 35.8125rem;
+        }
     }
 
     &__paragraph{
@@ -29,6 +40,10 @@
         margin: auto;
         text-align: center;
         margin-top: 0.875rem;
+
+        @include tablet{
+            margin-top: 2rem;
+        }
     }
 
     &__learn{
@@ -37,6 +52,10 @@
         margin: 1.5rem auto 0;
         position: relative;
         z-index: 1;
+
+        @include tablet{
+            margin-top: 1.25rem;
+        }
     }
 
     &__cover-container{
@@ -46,6 +65,11 @@
         background-position-x: center;
         margin-top: -5.625rem;
         background-repeat: no-repeat;
+
+        @include tablet{
+            height: 34.875rem;
+            margin-top: -6.3125rem;
+        }
     }
 }
 
