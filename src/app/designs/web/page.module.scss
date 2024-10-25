@@ -4,4 +4,15 @@
 .web{
     position: relative;
     padding: 0 0 17.875rem;
+
+    &__cards{
+        width: 87.2%;
+        margin: auto;
+        max-width: 69.4375rem;
+        margin-top: 6rem;
+
+        @include tablet{
+            width: 90%;
+        }
+    }
 }
