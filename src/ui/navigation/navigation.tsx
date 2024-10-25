@@ -18,6 +18,14 @@ export default function Navigation(){
     useEffect(() => {
         const body = document.querySelector("body");
 
+        const windowClickHandler = () => {
+            if(isOpen){
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("click", windowClickHandler);
+
         if(isOpen){
             (body as HTMLElement).style.maxHeight = "100vh";
             (body as HTMLElement).style.overflowY = "hidden";
@@ -25,6 +33,10 @@ export default function Navigation(){
         else{
             (body as HTMLElement).style.maxHeight = "none";
             (body as HTMLElement).style.overflowY = "revert";
+        }
+
+        return () => {
+            document.removeEventListener("click", windowClickHandler);
         }
     });
 
