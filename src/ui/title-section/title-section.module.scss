@@ -10,13 +10,34 @@
     background-repeat: repeat-x;
     background-size: 18.25rem 18.25rem;
     background-position: top right;
+    position: relative;
+
+    @include tablet{
+        padding: 4rem 0;
+        width: 90%;
+        margin: auto;
+        border-radius: 0.9375rem;
+        background-image: url("../../../public/shared/desktop/bg-pattern-call-to-action.svg");
+        background-position: left 0 center;
+        background-size: 876px 584px;
+        background-repeat: no-repeat;
+    }
 
     &__title{
         @include heading-2;
+
+        @include tablet{
+            @include heading-4;
+        }
     }
 
     &__description{
         @include body-1;
-        margin-top: 1.5rem;
+        margin: 1.5rem auto 0;
+        max-width: 400px;
+
+        @include tablet{
+            @include body-2;
+        }
     }
 }
