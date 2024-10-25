@@ -17,7 +17,6 @@ export default function Navigation(){
 
     useEffect(() => {
         const body = document.querySelector("body");
-        const overlay = document.querySelector("#overlay");
 
         if(isOpen){
             (body as HTMLElement).style.maxHeight = "100vh";
