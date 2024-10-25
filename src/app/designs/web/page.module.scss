@@ -8,6 +8,14 @@
     background-position: 0 7.875rem;
     background-repeat: no-repeat;
 
+    @include tablet{
+        padding: 0 0 24rem;
+    }
+
+    @include desktop{
+        padding: 0 0 23.75rem;
+    }
+
     &__cards{
         width: 87.2%;
         margin: auto;
