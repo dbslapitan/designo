@@ -4,6 +4,9 @@
 .web{
     position: relative;
     padding: 0 0 17.875rem;
+    background-image: url("../../../../public/shared/desktop/bg-pattern-leaf.svg");
+    background-position: 0 7.875rem;
+    background-repeat: no-repeat;
 
     &__cards{
         width: 87.2%;
@@ -13,7 +16,14 @@
 
         @include tablet{
             width: 90%;
-            margin-top: 7rem;;
+            margin-top: 7rem;
+        }
+
+        @include desktop{
+            margin-top: 10rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.875rem;
         }
     }
 }
