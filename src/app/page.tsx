@@ -18,19 +18,19 @@ export default function Home() {
         </section>
         <ul className={`${styles["designs"]}`}>
             <li className={`${styles["designs__item"]}`}>
-                <Link href={`/#`} className={`${styles["designs__link"]} ${styles["designs__link--web"]}`}>
+                <Link href={`/designs/web`} className={`${styles["designs__link"]} ${styles["designs__link--web"]}`}>
                     <h2 className={`${styles["designs__title"]}`}>WEB DESIGN</h2>
                     <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
                 </Link>
             </li>
             <li className={`${styles["designs__item"]}`}>
-                <Link href={`/#`} className={`${styles["designs__link"]} ${styles["designs__link--app"]}`}>
+                <Link href={`/designs/app`} className={`${styles["designs__link"]} ${styles["designs__link--app"]}`}>
                     <h2 className={`${styles["designs__title"]}`}>APP DESIGN</h2>
                     <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
                 </Link>
             </li>
             <li className={`${styles["designs__item"]}`}>
-                <Link href={`/#`} className={`${styles["designs__link"]} ${styles["designs__link--graphic"]}`}>
+                <Link href={`/designs/graphic`} className={`${styles["designs__link"]} ${styles["designs__link--graphic"]}`}>
                     <h2 className={`${styles["designs__title"]}`}>GRAPHIC DESIGN</h2>
                     <p className={`${styles["designs__sub"]}`}>VIEW PROJECTS</p>
                 </Link>
