@@ -11,13 +11,25 @@
 
     &__countries{
         text-align: center;
-        margin-top: 7.5rem;
+        margin: 7.5rem 0;
+
+        @include desktop{
+            margin:  10rem auto 0;
+            width: 69.4375rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4.625rem;
+        }
     }
 
     &__country{
         margin-top: 3rem;
 
         &:first-of-type{
+            margin-top: 0;
+        }
+
+        @include desktop{
             margin-top: 0;
         }
     }

@@ -3,14 +3,47 @@
 
 .card{
     width: 23.4375rem;
-    margin: 7.5rem auto 0;
+    margin: 0 auto;
 
     &:first-of-type{
-        margin-top: 0;
+
+        @include tablet{
+            margin-top: 0;
+        }
+    }
+
+    &:nth-of-type(odd){
+
+        .card__first{
+
+            @include desktop{
+                order: 1;
+                border-radius: 0 0.9375rem 0.9375rem 0;
+            }
+        }
+
+        .card__last{
+
+            @include desktop{
+                border-radius: 0.9375rem 0 0 0.9375rem;
+
+                &--light{
+                    background-position: left bottom;
+                }
+            }
+        }
     }
 
     @include tablet{
         width: 43.0625rem;
+        margin: 7.5rem auto 0;
+    }
+
+    @include desktop{
+        width: fit-content;
+        display: flex;
+        margin-top: 10rem;
+
     }
 
     &__first{
@@ -18,6 +51,13 @@
 
         @include tablet{
             border-radius: 0.9375rem 0.9375rem 0 0;
+        }
+
+        @include desktop{
+            border-radius: 0.9375rem 0 0 0.9375rem;
+            height: 40rem;
+            width: 29.75rem;
+
         }
 
         &--hero{
@@ -29,6 +69,7 @@
 
             @include desktop{
                 background-image: url("../../../public/about/desktop/image-about-hero.jpg");
+                height: 30rem;
             }
         }
 
@@ -58,17 +99,27 @@
     }
 
     &__last{
-        padding: 5rem 0;
+        padding: 5rem 1.5rem;
         text-align: center;
 
         @include tablet{
-            padding: 4rem 0;
+            padding: 4rem 3.625rem;
             border-radius: 0 0 0.9375rem 0.9375rem;
+        }
+
+        @include desktop{
+            border-radius: 0 0.9375rem 0.9375rem 0;
+            width: 39.6875rem;
+            height: 40rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         &--peach{
             background-color: $peach;
-            background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+            background-image: url("../../../public/about/desktop/bg-pattern-hero-about-desktop.svg");
             background-repeat: no-repeat;
             background-size: 18.25rem 18.25rem;
             background-position: right -9.125rem;
@@ -77,6 +128,11 @@
             @include tablet{
                 background-size: 40rem 40rem;
                 background-position: right 10.6875rem bottom 6.3125rem;
+                background-position: bottom center;
+            }
+
+            @include desktop{
+                height: 30rem;
             }
         }
 
@@ -88,6 +144,12 @@
             background-position: left top;
             color: $peach;
             
+            @include desktop{
+                background-image: url("../../../public/shared/desktop/bg-pattern-two-circles.svg");
+                background-size: unset;
+                background-repeat: no-repeat;
+                background-position: right 9.125rem bottom 0;
+            }
         }
     }
 
@@ -108,7 +170,6 @@
 
     &__description{
         @include body-1;
-        padding: 0 1.5rem;
         margin-top: 1.5rem;
 
         @include tablet{
