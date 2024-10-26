@@ -5,6 +5,18 @@
     width: 20.4375rem;
     margin: 2.5rem auto 0;
 
+    &:hover{
+        cursor: pointer;
+
+        & > .card__last{
+            background-color: $peach;
+
+            & > *{
+                color: $white;
+            }
+        }
+    }
+
     &:first-of-type{
         margin-top: 0;
     }
