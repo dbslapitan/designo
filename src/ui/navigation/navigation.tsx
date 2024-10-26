@@ -57,7 +57,7 @@ export default function Navigation(){
                     <Link href={"/"} className={`${style["nav__link"]}`}>OUR COMPANY</Link>
                 </li>
                 <li className={`${style["nav__item"]}`}>
-                    <Link href={"/"} className={`${style["nav__link"]}`}>ABOUT</Link>
+                    <Link href={"/about"} className={`${style["nav__link"]}`}>ABOUT</Link>
                 </li>
                 <li className={`${style["nav__item"]}`}>
                     <Link href={"/"} className={`${style["nav__link"]}`}>CONTACT</Link>

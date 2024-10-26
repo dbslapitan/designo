@@ -5,6 +5,10 @@
     width: 23.4375rem;
     margin: 0 auto 0;
 
+    @include tablet{
+        width: 43.0625rem;
+    }
+
     &__cover{
         height: 100%;
     }
