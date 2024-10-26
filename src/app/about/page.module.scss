@@ -8,4 +8,51 @@
     @include tablet{
         padding-bottom: 23.75rem;
     }
+
+    &__countries{
+        text-align: center;
+        margin-top: 7.5rem;
+    }
+
+    &__country{
+        margin-top: 3rem;
+
+        &:first-of-type{
+            margin-top: 0;
+        }
+    }
+
+    &__background{
+        background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+        background-repeat: no-repeat;
+        width: fit-content;
+        margin: auto;
+
+        &--90{
+            transform: rotateZ(90deg);
+            
+            & > *{
+                transform: rotateZ(-90deg);
+            }
+        }
+
+        &--180{
+            transform: rotateZ(-90deg);
+            
+            & > *{
+                transform: rotateZ(90deg);
+            }
+        }
+    }
+
+    &__heading{
+        @include heading-1;
+        margin-top: 3rem;
+    }
+
+    &__link{
+        margin: 2rem auto 0;
+        width: fit-content;
+        color: $white;
+    }
 }
