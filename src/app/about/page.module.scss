@@ -48,6 +48,10 @@
     &__heading{
         @include heading-1;
         margin-top: 3rem;
+
+        @include tablet{
+            margin-top: 2rem;
+        }
     }
 
     &__link{

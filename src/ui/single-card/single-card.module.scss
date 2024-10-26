@@ -3,23 +3,68 @@
 
 .card{
     width: 23.4375rem;
-    margin: 0 auto 0;
+    margin: 7.5rem auto 0;
+
+    &:first-of-type{
+        margin-top: 0;
+    }
 
     @include tablet{
         width: 43.0625rem;
     }
 
-    &__cover{
-        height: 100%;
-    }
-
     &__first{
         height: 20rem;
+
+        @include tablet{
+            border-radius: 0.9375rem 0.9375rem 0 0;
+        }
+
+        &--hero{
+            background-image: url("../../../public/about/mobile/image-about-hero.jpg");
+
+            @include tablet{
+                background-image: url("../../../public/about/tablet/image-about-hero.jpg");
+            }
+
+            @include desktop{
+                background-image: url("../../../public/about/desktop/image-about-hero.jpg");
+            }
+        }
+
+        &--world{
+            background-image: url("../../../public/about/mobile/image-world-class-talent.jpg");
+
+            @include tablet{
+                background-image: url("../../../public/about/tablet/image-world-class-talent.jpg");
+            }
+
+            @include desktop{
+                background-image: url("../../../public/about/desktop/image-world-class-talent.jpg");
+            }
+        }
+
+        &--real{
+            background-image: url("../../../public/about/mobile/image-real-deal.jpg");
+
+            @include tablet{
+                background-image: url("../../../public/about/tablet/image-real-deal.jpg");
+            }
+
+            @include desktop{
+                background-image: url("../../../public/about/desktop/image-real-deal.jpg");
+            }
+        }
     }
 
     &__last{
         padding: 5rem 0;
         text-align: center;
+
+        @include tablet{
+            padding: 4rem 0;
+            border-radius: 0 0 0.9375rem 0.9375rem;
+        }
 
         &--peach{
             background-color: $peach;
@@ -28,6 +73,11 @@
             background-size: 18.25rem 18.25rem;
             background-position: right -9.125rem;
             color: $white;
+
+            @include tablet{
+                background-size: 40rem 40rem;
+                background-position: right 10.6875rem bottom 6.3125rem;
+            }
         }
 
         &--light{
@@ -43,12 +93,27 @@
 
     &__title{
         @include heading-2;
+
+        @include tablet{
+            @include heading-4;
+        }
+
+        &--h2{
+
+            @include tablet{
+                @include heading-3;
+            }
+        }
     }
 
     &__description{
         @include body-1;
         padding: 0 1.5rem;
         margin-top: 1.5rem;
+
+        @include tablet{
+            @include body-2;
+        }
 
         &--white{
             color: $white;
