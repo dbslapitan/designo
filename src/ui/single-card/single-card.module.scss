@@ -1,0 +1,57 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.card{
+    width: 23.4375rem;
+    margin: 0 auto 0;
+
+    &__cover{
+        height: 100%;
+    }
+
+    &__first{
+        height: 20rem;
+    }
+
+    &__last{
+        padding: 5rem 0;
+        text-align: center;
+
+        &--peach{
+            background-color: $peach;
+            background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+            background-repeat: no-repeat;
+            background-size: 18.25rem 18.25rem;
+            background-position: right -9.125rem;
+            color: $white;
+        }
+
+        &--light{
+            background-color: #FDF3F0;
+            background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+            background-repeat: no-repeat;
+            background-size: 18.25rem 18.25rem;
+            background-position: right -9.125rem;
+            color: $peach;
+            
+        }
+    }
+
+    &__title{
+        @include heading-2;
+    }
+
+    &__description{
+        @include body-1;
+        padding: 0 1.5rem;
+        margin-top: 1.5rem;
+
+        &--white{
+            color: $white;
+        }
+
+        &--black{
+            color: $dark-grey;
+        }
+    }
+}

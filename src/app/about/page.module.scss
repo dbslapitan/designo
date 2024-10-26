@@ -2,5 +2,10 @@
 @use "../../styles/variables" as *;
 
 .about{
+    position: relative;
     padding-bottom: 19.375rem;
+
+    @include tablet{
+        padding-bottom: 23.75rem;
+    }
 }
