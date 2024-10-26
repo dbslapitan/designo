@@ -2,11 +2,21 @@
 @use "../../styles/variables" as *;
 
 .links{
-    width: 87.2%;
     margin: 6rem auto 0;
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+
+    @include tablet{
+        margin-top: 7.5rem;
+    }
+
+    @include desktop{
+        margin-top: 10rem;
+        flex-direction: row;
+        width: 69.4375rem;
+        justify-content: space-between;
+    }
 
     &__item{
         text-align: center;
@@ -25,6 +35,11 @@
         @include tablet{
             width: 43.0625rem;
             height: 12.5rem;
+        }
+
+        @include desktop{
+            width: 33.8125rem;
+            height: 19.25rem;
         }
 
         &--web{
