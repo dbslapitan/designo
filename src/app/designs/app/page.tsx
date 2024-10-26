@@ -5,7 +5,7 @@ import DesignLinks from "@/ui/design-links/design-links";
 import airFilter from "../../../../public/app-design/desktop/image-airfilter.jpg";
 import eyecam from "../../../../public/app-design/desktop/image-eyecam.jpg";
 import faceit from "../../../../public/app-design/desktop/image-faceit.jpg";
-import loopStudios from "../../../../public/app-design/desktop/image-loopStudios.jpg";
+import loopStudios from "../../../../public/app-design/desktop/image-loopstudios.jpg";
 import todo from "../../../../public/app-design/desktop/image-todo.jpg";
 import Card from "@/ui/card/card";
 
