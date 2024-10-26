@@ -8,6 +8,7 @@ import camp from "../../../../public/web-design/desktop/image-camp.jpg";
 import photon from "../../../../public/web-design/desktop/image-photon.jpg";
 import transfer from "../../../../public/web-design/desktop/image-transfer.jpg";
 import Card from "@/ui/card/card";
+import DesignLinks from "@/ui/design-links/design-links";
 
 export default function WebDesigns(){
 
@@ -55,6 +56,7 @@ export default function WebDesigns(){
                     })
                 }
             </ul>
+            <DesignLinks current="web" />
             <CallToAction />
         </main>
     );

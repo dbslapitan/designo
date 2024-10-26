@@ -1,0 +1,120 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.links{
+    width: 87.2%;
+    margin: 6rem auto 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    &__item{
+        text-align: center;
+    }
+
+    &__link{
+        height: 15.625rem;
+        width: 20.4375rem;
+        border-radius: 0.9375rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+
+        &--web{
+            background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/mobile/image-web-design.jpg");
+
+            &:hover{
+                background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/mobile/image-web-design.jpg");
+            }
+
+            @include tablet{
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/tablet/image-web-design.jpg");
+
+                &:hover{
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/tablet/image-web-design.jpg");
+                }
+            }
+
+            @include desktop{
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/desktop/image-web-design-large.jpg");
+                height: 40rem;
+
+                &:hover{
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/desktop/image-web-design-large.jpg");
+                }
+            }
+        }
+
+        &--app{
+            background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/mobile/image-app-design.jpg");
+
+            &:hover{
+                background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/mobile/image-app-design.jpg");
+            }
+
+            @include tablet{
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/tablet/image-app-design.jpg");
+
+                &:hover{
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/tablet/image-app-design.jpg");
+                }
+            }
+
+            @include desktop{
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/desktop/image-app-design.jpg");
+
+                &:hover{
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/desktop/image-app-design.jpg");
+                }
+            }
+        }
+
+        &--graphic{
+            background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/mobile/image-graphic-design.jpg");
+
+            &:hover{
+                background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/mobile/image-graphic-design.jpg");
+            }
+
+            @include tablet{
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/tablet/image-graphic-design.jpg");
+
+                &:hover{
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/tablet/image-graphic-design.jpg");
+                }
+            }
+
+            @include desktop{
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/desktop/image-graphic-design.jpg");
+
+                &:hover{
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/desktop/image-graphic-design.jpg");
+                }
+            }
+        }
+
+        &--hide{
+            display: none;
+        }
+    }
+
+    &__title{
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 1.28751;
+        letter-spacing: 1.4px;
+    }
+
+    &__projects{
+        margin-top: 0.75rem;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+
+        &::after{
+            margin-left: 1rem;
+            content: url("../../../public/shared/desktop/icon-right-arrow.svg");
+        }
+    }
+}
