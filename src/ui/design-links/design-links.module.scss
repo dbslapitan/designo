@@ -20,6 +20,12 @@
         flex-direction: column;
         justify-content: center;
         color: $white;
+        margin: auto;
+
+        @include tablet{
+            width: 43.0625rem;
+            height: 12.5rem;
+        }
 
         &--web{
             background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/mobile/image-web-design.jpg");
