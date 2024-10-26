@@ -58,11 +58,10 @@
             }
 
             @include desktop{
-                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/desktop/image-web-design-large.jpg");
-                height: 40rem;
+                background-image: linear-gradient(0deg, #00000099, #00000099), url("../../../public/home/desktop/image-web-design-small.jpg");
 
                 &:hover{
-                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/desktop/image-web-design-large.jpg");
+                    background-image: linear-gradient(0deg, #E7816B99, #E7816B99),  url("../../../public/home/desktop/image-web-design-small.jpg");
                 }
             }
         }
