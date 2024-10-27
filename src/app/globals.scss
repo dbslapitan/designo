@@ -62,6 +62,23 @@ address{
     position: relative;
     padding-top: 2px;
 
+    &__error{
+        position: absolute;
+        bottom: 0.625rem;
+        right: 0.5rem;
+        font-size: 0.75rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 2.16667;
+
+        &::after{
+            content: url("../../public/contact/desktop/icon-error.svg");
+            position: relative;
+            top: 0.25rem;
+            margin-left: 0.5rem;
+        }
+    }
+
     &__label{
         @include body-1;
         position: absolute;
