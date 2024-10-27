@@ -7,10 +7,11 @@ import isMobile from "validator/lib/isMobilePhone";
 
 export default function DetailsFrom(){
 
-    const nameRef = useRef(null);
-    const emailRef = useRef(null);
-    const phoneRef = useRef(null);
-    const messageRef = useRef(null);
+    const nameRef = useRef<null | HTMLLabelElement>(null);
+    const emailRef = useRef<null | HTMLLabelElement>(null);
+    const phoneRef = useRef<null | HTMLLabelElement>(null);
+    const messageRef = useRef<null | HTMLLabelElement>(null);
+    const formRef = useRef<null | HTMLFormElement>(null);
 
     const [details, setDetails] = useState({
         name: "",
@@ -62,6 +63,26 @@ export default function DetailsFrom(){
 
         if(!name || !isEmail(email) || !isMobile(phone) || !message){
             setIsSubmit(true);
+        }else{
+            (formRef.current as HTMLFormElement).reset();
+            if((nameRef.current as HTMLLabelElement).classList.contains("field__label--hide")){
+                (nameRef.current as HTMLLabelElement).classList.remove("field__label--hide");
+            }
+            if((emailRef.current as HTMLLabelElement).classList.contains("field__label--hide")){
+                (emailRef.current as HTMLLabelElement).classList.remove("field__label--hide");
+            }
+            if((phoneRef.current as HTMLLabelElement).classList.contains("field__label--hide")){
+                (phoneRef.current as HTMLLabelElement).classList.remove("field__label--hide");
+            }
+            if((messageRef.current as HTMLLabelElement).classList.contains("field__label--hide")){
+                (messageRef.current as HTMLLabelElement).classList.remove("field__label--hide");
+            }
+            setDetails({
+                name: "",
+                email: "",
+                phone: "",
+                message: ""
+            });
         }
     }
 
@@ -75,7 +96,7 @@ export default function DetailsFrom(){
     }
 
     return(
-        <form className={`${styles["detail"]}`} onSubmit={submitHandler}>
+        <form className={`${styles["detail"]}`} onSubmit={submitHandler} ref={formRef}>
             <div className={`field ${styles["detail__field"]}`}>
                 <label htmlFor="name" className={`field__label`} ref={nameRef}>Name</label>
                 <input defaultValue={details.name} type="text" name="name" id="name" className={`field__input`} onFocus={(e) => focusHandler(e, nameRef)} onBlur={(e) => focusOutHandler(e, nameRef)} onChange={changeHandler}/>
