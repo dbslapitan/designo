@@ -33,6 +33,10 @@ ul{
     letter-spacing: 1px;
     padding: 1.125rem 1.5rem 1rem;
 
+    &:hover{
+        cursor: pointer;
+    }
+
     &__dark{
         background-color: $white;
         color: #333136;
@@ -109,6 +113,11 @@ address{
 
         &:focus{
             outline:none;
+            border-bottom: 2px solid $white;
+        }
+
+        &:hover{
+            cursor: pointer;
             border-bottom: 2px solid $white;
         }
 

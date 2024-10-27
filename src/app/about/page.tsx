@@ -3,23 +3,9 @@ import hero from "../../../public/about/mobile/image-about-hero.jpg";
 import real from "../../../public/about/mobile/image-real-deal.jpg";
 import world from "../../../public/about/mobile//image-world-class-talent.jpg";
 import SingleCard from "@/ui/single-card/single-card";
-import canada from "../../../public/shared/desktop/illustration-canada.svg";
-import australia from "../../../public/shared/desktop/illustration-australia.svg";
-import uk from "../../../public/shared/desktop/illustration-united-kingdom.svg";
 import Countries from "@/ui/countries/countries";
 
 export default function About() {
-
-    const locations = [{
-        country: "CANADA",
-        image: canada,
-    }, {
-        country: "AUSTRALIA",
-        image: australia,
-    }, {
-        country: "UNITED KINGDOM",
-        image: uk,
-    }];
 
     return (
         <main className={`${styles["about"]}`}>
