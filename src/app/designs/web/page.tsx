@@ -1,4 +1,3 @@
-import CallToAction from "@/ui/call-to-action/call-to-action";
 import styles from "./page.module.scss";
 import TitleSection from "@/ui/title-section/title-section";
 import express from "../../../../public/web-design/desktop/image-express.jpg";

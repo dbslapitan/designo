@@ -4,7 +4,6 @@ import passionate from "../../public/home/desktop/illustration-passionate.svg";
 import resourceful from "../../public/home/desktop/illustration-resourceful.svg";
 import friendly from "../../public/home/desktop/illustration-friendly.svg";
 import Image from "next/image";
-import CallToAction from "@/ui/call-to-action/call-to-action";
 
 export default function Home() {
   return (

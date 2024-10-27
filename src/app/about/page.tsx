@@ -1,4 +1,3 @@
-import CallToAction from "@/ui/call-to-action/call-to-action";
 import styles from "./page.module.scss";
 import hero from "../../../public/about/mobile/image-about-hero.jpg";
 import real from "../../../public/about/mobile/image-real-deal.jpg";
