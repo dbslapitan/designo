@@ -19,13 +19,13 @@ export default function Footer(){
                 </Link>
                 <ul className={`${styles["footer__links"]}`}>
                     <li className={`${styles["footer__item"]}`}>
-                        <Link href={"#"} className={`${styles["footer__link"]}`}>OUR COMPANY</Link>
+                        <Link href={"/"} className={`${styles["footer__link"]}`}>OUR COMPANY</Link>
                     </li>
                     <li className={`${styles["footer__item"]}`}>
-                        <Link href={"#"} className={`${styles["footer__link"]}`}>LOCATIONS</Link>
+                        <Link href={"/locations"} className={`${styles["footer__link"]}`}>LOCATIONS</Link>
                     </li>
                     <li className={`${styles["footer__item"]}`}>
-                        <Link href={"#"} className={`${styles["footer__link"]}`}>CONTACT</Link>
+                        <Link href={"/contact"} className={`${styles["footer__link"]}`}>CONTACT</Link>
                     </li>
                 </ul>
             </div>

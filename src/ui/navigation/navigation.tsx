@@ -60,7 +60,7 @@ export default function Navigation(){
                     <Link href={"/about"} className={`${style["nav__link"]}`}>ABOUT</Link>
                 </li>
                 <li className={`${style["nav__item"]}`}>
-                    <Link href={"/"} className={`${style["nav__link"]}`}>CONTACT</Link>
+                    <Link href={"/contact"} className={`${style["nav__link"]}`}>CONTACT</Link>
                 </li>
             </ul>
         </div>
