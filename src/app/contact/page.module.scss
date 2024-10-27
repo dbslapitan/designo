@@ -15,6 +15,9 @@
 
     @include tablet{
         text-align: left;
+        background-image:  url("../../../public/contact/desktop/bg-pattern-hero-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: -7.75rem -5rem;
     }
 
     &__title{

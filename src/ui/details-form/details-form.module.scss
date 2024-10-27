@@ -7,6 +7,10 @@
     width: 87.2%;
     background: transparent;
 
+    @include tablet{
+        text-align: right;
+    }
+
     &__submit{
         @include body-1;
         margin-top: 3.625rem;
