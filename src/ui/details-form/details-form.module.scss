@@ -1,0 +1,17 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.detail{
+    background-color:inherit;
+    margin: 3rem auto 0;
+    width: 87.2%;
+
+    &__submit{
+        @include body-1;
+        margin-top: 3.625rem;
+    }
+
+    &__field{
+        margin-top: 1.5rem;
+    }
+}

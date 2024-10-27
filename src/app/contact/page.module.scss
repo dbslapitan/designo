@@ -1,2 +1,25 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.contact{
+    padding-bottom: 7.5rem;
+}
+
+.header{
+    padding: 4.5rem 0;
+    background-color: $peach;
+    color: $white;
+    text-align: center;
+    background-image: url("../../../public/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+    background-position: 25% top;
+
+    &__title{
+        @include heading-2;
+    }
+
+    &__description{
+        @include body-1;
+        max-width: 20.4375rem;
+        margin: 1.5rem auto 0;
+    }
+}
