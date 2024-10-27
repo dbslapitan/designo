@@ -13,13 +13,37 @@
     background-image: url("../../../public/contact/mobile/bg-pattern-hero-contact-mobile.svg");
     background-position: 25% top;
 
+    @include tablet{
+        text-align: left;
+    }
+
     &__title{
         @include heading-2;
+
+        @include tablet{
+            padding: 0 3.625rem;
+        }
     }
 
     &__description{
         @include body-1;
-        max-width: 20.4375rem;
         margin: 1.5rem auto 0;
+        padding: 0 1.5rem;
+        min-height: 7.8125rem;
+
+        @include tablet{
+            @include body-2;
+            padding: 0 3.625rem;
+            margin-top: 2rem;
+            margin-left: 0;
+            min-height: 4.875rem;
+        }
+    }
+
+    @include tablet{
+        width: 90%;
+        max-width: 69.4375rem;
+        margin: auto;
+        border-radius: 0.9375rem;
     }
 }
