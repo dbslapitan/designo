@@ -20,23 +20,40 @@
         background-position: -7.75rem -5rem;
     }
 
+    @include mid-tablet{
+        display: flex;
+        padding: 3.375rem 0;
+        background-position: 0 -5rem;
+    }
+
+    &__top{
+        padding: 0 1.5rem;
+
+        @include tablet{
+            padding: 0 3.625rem;
+        }
+
+        @include mid-tablet{
+            width: 33.75rem;
+            padding: 5.0625rem 0 0 5.9375rem;
+        }
+    }
+
     &__title{
         @include heading-2;
 
         @include tablet{
-            padding: 0 3.625rem;
+            @include heading-4;
         }
     }
 
     &__description{
         @include body-1;
         margin: 1.5rem auto 0;
-        padding: 0 1.5rem;
         min-height: 7.8125rem;
 
         @include tablet{
             @include body-2;
-            padding: 0 3.625rem;
             margin-top: 2rem;
             margin-left: 0;
             min-height: 4.875rem;

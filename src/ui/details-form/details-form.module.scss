@@ -11,6 +11,13 @@
         text-align: right;
     }
 
+    @include mid-tablet{
+        margin: 0;
+        width: unset;
+        padding: 0 6rem;
+        flex-grow: 1;
+    }
+
     &__submit{
         @include body-1;
         margin-top: 3.625rem;
