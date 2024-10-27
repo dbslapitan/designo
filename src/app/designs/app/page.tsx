@@ -52,7 +52,6 @@ export default function AppDesigns(){
                 }
             </ul>
             <DesignLinks current="app" />
-            <CallToAction />
         </main>
     );
 }

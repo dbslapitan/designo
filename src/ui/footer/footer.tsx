@@ -7,10 +7,12 @@ import youtube from "../../../public/shared/desktop/icon-youtube.svg";
 import twitter from "../../../public/shared/desktop/icon-twitter.svg";
 import pinterest from "../../../public/shared/desktop/icon-pinterest.svg";
 import instagram from "../../../public/shared/desktop/icon-instagram.svg";
+import CallToAction from "../call-to-action/call-to-action";
 
 export default function Footer(){
     return(
         <footer className={`${styles["footer"]}`}>
+            <CallToAction />
             <div className={`${styles["footer__top"]}`}>
                 <Link href={"/"} className={`${styles["footer__logo"]}`}>
                     <Image src={logo} alt="designo logo" priority={true} width={197}></Image>

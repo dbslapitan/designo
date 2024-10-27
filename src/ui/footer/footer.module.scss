@@ -3,14 +3,14 @@
 
 .footer{
     background-color: $black;
-    padding: 15.8125rem 0 4rem;
+    padding: 0 0 4rem;
 
     @include tablet{
-        padding: 10.375rem 0 5rem;
+        padding: 0 0 5rem;
     }
 
     @include desktop{
-        padding: 9rem 0 4.5rem;
+        padding: 0 0 4.5rem;
     }
 
     &__top{
@@ -21,13 +21,18 @@
         padding-bottom: 2rem;
         position: relative;
         max-width: 69.4375rem;
+        padding-top: 4rem;
 
         @include tablet{
             width: 90%;
             position: static;
             display: flex;
             justify-content: space-between;
-            padding: 0;
+            padding-top: 5rem;
+        }
+
+        @include desktop{
+            padding-top: 4.5rem;
         }
     }
 

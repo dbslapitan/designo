@@ -59,7 +59,6 @@ export default function Home() {
                 <p className={`${styles["characters__description"]}`}> We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
             </li>
         </ul>
-        <CallToAction />
     </main>
   );
 }

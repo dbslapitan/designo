@@ -43,7 +43,6 @@ export default function GraphicDesigns(){
                 }
             </ul>
             <DesignLinks current="graphic" />
-            <CallToAction />
         </main>
     );
 }

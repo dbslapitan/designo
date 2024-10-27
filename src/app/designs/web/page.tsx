@@ -57,7 +57,6 @@ export default function WebDesigns(){
                 }
             </ul>
             <DesignLinks current="web" />
-            <CallToAction />
         </main>
     );
 }
