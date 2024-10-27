@@ -1,0 +1,66 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.countries{
+    text-align: center;
+    margin: 7.5rem 0 0;
+
+    @include desktop{
+        margin:  10rem auto 0;
+        width: 69.4375rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4.625rem;
+    }
+
+    &__country{
+        margin-top: 3rem;
+
+        &:first-of-type{
+            margin-top: 0;
+        }
+
+        @include desktop{
+            margin-top: 0;
+        }
+    }
+
+    &__background{
+        background-image: url("../../../public/shared/desktop/bg-pattern-small-circle.svg");
+        background-repeat: no-repeat;
+        width: fit-content;
+        margin: auto;
+
+        &--90{
+            transform: rotateZ(90deg);
+            
+            & > *{
+                transform: rotateZ(-90deg);
+            }
+        }
+
+        &--180{
+            transform: rotateZ(-90deg);
+            
+            & > *{
+                transform: rotateZ(90deg);
+            }
+        }
+    }
+
+    &__heading{
+        @include heading-1;
+        margin-top: 3rem;
+
+        @include tablet{
+            margin-top: 2rem;
+        }
+    }
+
+    &__link{
+        margin: 2rem auto 0;
+        width: fit-content;
+        color: $white;
+    }
+    
+}
