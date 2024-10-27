@@ -30,7 +30,6 @@ export default function DetailsFrom(){
 
     const focusHandler = (event: FocusEvent, ref: MutableRefObject<HTMLLabelElement | null>) => {
         const target = (event.target as HTMLInputElement);
-        const value = `${target.value.trim()}`;
         const tempErrors = {...errors};
         tempErrors[target.id as keyof typeof errors] = "";
         if(!(ref.current as HTMLLabelElement).classList.contains("field__label--hide")){
@@ -42,7 +41,6 @@ export default function DetailsFrom(){
     const focusOutHandler = (event: FocusEvent, ref: MutableRefObject<HTMLLabelElement | null>) => {
         const target = (event.target as HTMLInputElement);
         const value = `${target.value.trim()}`;
-        const id = target.id;
         if(!value){
             if((ref.current as HTMLLabelElement).classList.contains("field__label--hide")){
                 (ref.current as HTMLLabelElement).classList.remove("field__label--hide");
