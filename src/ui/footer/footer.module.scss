@@ -94,4 +94,11 @@
             align-items: flex-end;
         }
     }
+
+    &__address{
+
+        @include tablet{
+            text-align: left;
+        }
+    }
 }
