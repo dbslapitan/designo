@@ -7,12 +7,12 @@
     @include tablet{
         padding-bottom: 24rem;
     }
-
-    @include desktop{
-        padding-bottom: 10rem;
-    }
 }
 
 .card{
     margin-top: 2.5rem;
+
+    @include mid-mobile{
+        margin-top: 4.5rem;
+    }
 }

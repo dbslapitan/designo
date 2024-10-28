@@ -24,16 +24,40 @@
         position: relative;
         background-image: url("../../../public/shared/desktop/bg-pattern-three-circles.svg");
         color: $dark-grey;
+
+        @include mid-mobile{
+            margin-top: 2rem;
+            border-radius: 0.9375rem;
+            background-image: url("../../../public/shared/desktop/bg-pattern-two-circles.svg");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            display: flex;
+            padding: 5.5rem 4.625rem;
+            text-align: left;
+            flex-wrap: wrap;
+            column-gap: 8.25rem;
+            row-gap: 1.5rem;
+        }
     }
 
     &__country{
         @include heading-2;
         color: $peach;
+
+        @include mid-mobile{
+            @include heading-3;
+            width: 100%;
+        }
     }
 
     &__address{
         @include body-2;
         margin-top: 1.5rem;
+
+        @include mid-mobile{
+            @include body-2;
+            margin-top: 0;
+        }
     }
 
     &__sub{
