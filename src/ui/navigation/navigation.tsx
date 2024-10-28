@@ -48,7 +48,7 @@ export default function Navigation(){
     });
 
     return(
-        <div className={`${style["nav"]}`}>
+        <div>
             <button className={`${style["nav__toggle"]}`} onClick={toggle}>
                 <Image src={isOpen ? close : hamburger} alt={isOpen ? "close button" : "hamburger button"}/>
             </button>
