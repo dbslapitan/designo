@@ -20,7 +20,7 @@ export default function DesignLinks({current}: {current: string}) {
                 designs.map(design => {
                     return (
                         current.toLowerCase() !== design.title.toLowerCase() &&
-                        <li className={`${styles["links__item"]}`}>
+                        <li key={design.link} className={`${styles["links__item"]}`}>
                             <Link href={design.link} className={`${styles["links__link"]} ${styles[`links__link--${design.title.toLowerCase()}`]} ${ current.toLowerCase() === design.title.toLowerCase() ? styles["links__link--hide"] : ""}`}>
                                 <h2 className={`${styles["links__title"]}`}>{`${design.title} DESIGN`}</h2>
                                 <p className={`${styles["links__projects"]}`}>VIEW PROJECTS</p>
