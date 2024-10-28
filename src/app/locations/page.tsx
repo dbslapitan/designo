@@ -46,7 +46,7 @@ export default function Page(){
     return(
         <main className={`${styles["locations"]}`}>
             <MapCard id="canada" data={canada}/>
-            <MapCard id="australia" className={`${styles["card"]}`} data={australia} />
+            <MapCard reverse={true} id="australia" className={`${styles["card"]}`} data={australia} />
             <MapCard id="united-kingdom" className={`${styles["card"]}`} data={uk} />
         </main>
     );

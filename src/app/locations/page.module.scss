@@ -15,4 +15,8 @@
     @include mid-mobile{
         margin-top: 4.5rem;
     }
+
+    @include mid-tablet{
+        margin-top: 2rem;
+    }
 }

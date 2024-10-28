@@ -5,6 +5,16 @@
     max-width: 43.0625rem;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet{
+        max-width: 69.4375rem;
+        width: clamp(43.063rem, -1.752rem + 93.363vi, 69.438rem);
+    }
+
+    @include mid-tablet{
+        display: flex;
+        justify-content: space-between;
+    }
     
     &__map{
         width: 100%;
@@ -14,6 +24,17 @@
         @include mid-mobile{
             border-radius: 0.9375rem;
             overflow: hidden;
+        }
+
+        @include mid-tablet{
+            width: 21.875rem;
+        }
+
+        &--reverse{
+
+            @include mid-tablet{
+                order: 1;
+            }
         }
     }
 
@@ -32,11 +53,17 @@
             background-repeat: no-repeat;
             background-position: left bottom;
             display: flex;
-            padding: 5.5rem 4.625rem;
+            padding: 5.5rem 0 5.5rem clamp(4.625rem, -18.029rem + 52.607vi, 18.5rem);
             text-align: left;
             flex-wrap: wrap;
             column-gap: 8.25rem;
             row-gap: 1.5rem;
+        }
+
+        @include mid-tablet{
+            margin-top: 0;
+            padding: 5.5rem 5.9375rem;
+            width: 45.625rem;
         }
     }
 
