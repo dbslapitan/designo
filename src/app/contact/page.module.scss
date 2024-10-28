@@ -3,6 +3,10 @@
 
 .contact{
     padding-bottom: 7.5rem;
+
+    @include desktop{
+        padding-bottom: 10rem;
+    }
 }
 
 .header{
