@@ -6,11 +6,11 @@ import { ILocation } from "@/models/locations";
 
 const MAP_API = process.env.NEXT_PUBLIC_MAPS_API;
 
-export default function MapCard({ data, className = "" }: { data: ILocation, className?: string }) {
+export default function MapCard({ data, className = "", id }: { data: ILocation, className?: string, id: string }) {
 
     return (
         <APIProvider apiKey={`${MAP_API}`}>
-            <section className={`${styles["card"]} ${className}`}>
+            <section className={`${styles["card"]} ${className}`} id={id.toLowerCase()}>
                 <Map
                     mapId={`319978e10de52f81`}
                     className={`${styles["card__map"]}`}

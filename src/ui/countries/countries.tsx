@@ -22,13 +22,15 @@ export default function Countries(){
         <ul className={`${styles["countries"]}`}>
                 {
                     locations.map((location, index) => {
+                        const link = location.country.split(" ").join("-").toLowerCase();
+                        console.log(link);
                         return (
                             <li key={location.country} className={`${styles["countries__country"]}`}>
                                 <div className={`${styles["countries__background"]} ${index === 0 ? styles["countries__background--90"] : ""} ${index === 2 ? styles["countries__background--180"] : ""}`}>
                                     <Image src={location.image} alt={`illustration of ${location.country}`} />
                                 </div>
                                 <h2 className={`${styles["countries__heading"]}`}>{location.country}</h2>
-                                <Link href={`#`} className={`btn btn__light ${styles["countries__link"]}`}>
+                                <Link href={`/locations/#${link}`} className={`btn btn__light ${styles["countries__link"]}`}>
                                     SEE LOCATION
                                 </Link>
                             </li>
